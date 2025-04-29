@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Quicklist - Lista de Compras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+
+    <div class="logo flex">
+      <img src="assets/logo.svg">
+      <p>quicklist</p>
+    </div>
+
+    <div class="title">
+      <a href="#"><span>&lt;-</span> Voltar</a>
+      <h1>Compras da semana</h1>
+    </div>
+
+    <form>
+      <div class="flex new-item-wrapper">
+        <input type="text" name="new-item" id="new-item" placeholder="Adicione um novo item" required>
+        <button type="submit">Adicionar item</button>
+      </div>
+    </form>
+
+    <ul class="items-list">
+
+      <li>
+        <input class="checkbox" type="checkbox">
+        Arroz
+        <img class="trash-can" src="assets/trash.svg">
+      </li>
+
+      <li>
+        <input class="checkbox" type="checkbox">
+        Feijão
+        <img class="trash-can" src="assets/trash.svg">
+      </li>
+
+      <li>
+        <input class="checkbox" type="checkbox">
+        Pão de forma
+        <img class="trash-can" src="assets/trash.svg">
+      </li>
+
+      <li>
+        <input class="checkbox" type="checkbox">
+        1kg Carne moída
+        <img class="trash-can" src="assets/trash.svg">
+      </li>
+
+    </ul>
+
+    <div class="removed-item flex">
+      <span>
+        <img src="assets/warning.svg" alt="">
+      </span>
+      <span>O item foi removido da lista</span>
+      <button class="close"><img src="assets/delete-small.svg" alt=""></button>
+    </div>
+
+  </main>
+
+  <script src="scripts/script.js"></script>
+</html>

@@ -1,0 +1,151 @@
+main {
+  width: 39.187rem;
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-family: "Sora", sans-serif;
+  font-weight: bold;
+  font-size: 26.67px;
+  letter-spacing: -.8px;
+  line-height: 40px;
+  padding-block: 25px 62px;
+}
+
+.title {
+
+  & a {
+    font: var(--link);
+    color: var(--color-brand);
+
+    & > span {
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  & h1 {
+    font: var(--title);
+    color: var(--content-primary);
+
+    padding-top: 1rem;
+  }
+}
+
+.new-item-wrapper {
+  width: 100%;
+  gap: 1rem;
+  padding-block: 44px 40px;
+
+
+  & > input {
+    flex: 2;
+
+    padding-block: 9px;
+    padding-left: 16px;
+    border-radius: 12px;
+    border: 2px solid var(--border-primary);
+    line-height: 140%;
+    font-size: 1rem;
+    
+    &::placeholder {
+      color: var(--content-tertiary);
+    }
+
+    &:hover {
+      border:2px solid var(--border-hover);
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid var(--color-brand);
+      color: var(--content-primary);
+    }
+  }
+
+  & > button {
+    flex: 1;
+
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    font: var(--label);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-brand-hover);
+    }
+  }
+}
+
+.items-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  & li:last-child {
+    margin-bottom: 36px;
+  }
+
+  & > li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background-color: var(--background-secondary);
+    font: var(--paragraph);
+    color: var(--content-secondary);
+    line-height: 24px;
+    padding: 12.5px 12px;
+    border-radius: 12px;
+
+    & > input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      border-radius: 600px;
+      cursor: pointer;
+    }
+
+    & > img {
+      margin-left: auto;
+      width: 32px;
+      height: 32px;
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.removed-item {
+  width: 100%;
+  align-items: center;
+  font: var(--label);
+  color: var(--always-white);
+  background-color: var(--color-danger);
+  padding: 12px;
+  border-radius: 12px;
+  gap: 8px;
+  /* margin-top: 36px; */
+
+  display: none;
+
+  & span:nth-child(1) {
+    width: 20px;
+    height: 20px;
+  }
+
+  & button {
+    height: 20px;
+    margin-left: auto;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+}
