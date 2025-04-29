@@ -149,3 +149,13 @@ main {
     cursor: pointer;
   }
 }
+
+@media (width < 500px) {
+  .new-item-wrapper {
+    flex-direction: column;
+
+    & > button {
+      padding-block: 12px;
+    }
+  }
+}
