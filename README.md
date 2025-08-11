@@ -36,7 +36,7 @@ A Quicklist permite que os usuários adicionem, visualizem e gerenciem seus iten
 
 ### Lista de Compras
 
-![Lista de Compras Quicklist](./quicklist_screenshot_1.webp )
+![Lista de Compras Quicklist](assets/readme/1.png)
 
 ## 🔮 Melhorias Futuras
 
